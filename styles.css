@@ -1,0 +1,270 @@
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#494949, #000000);
+    color: #14213d;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+.container {
+    height: 600px;
+    width: 750px;
+    background: linear-gradient(rgb(179, 179, 179), #fff);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.game-container {
+    display: flex;
+}
+
+#game {
+    height: 550px;
+    width: 550px;
+    position: relative;
+}
+
+#play, #win {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#win {
+    display: none;
+    flex-direction: column;
+}
+
+#win span {
+    font-size: 75px;
+    margin: 15px;
+}
+
+#start {
+    border-radius: 10px;
+    height: 75px;
+    width: 150px;
+    font-size: 40px;
+    background-color: #14213d;
+    color: #fff;
+}
+
+#start:hover {
+    background-color: #fca311;
+    box-shadow: 5px 5px 5px #818181;
+    font-size: 45px;
+}
+
+#tiles {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.tile {
+    border: 1px solid #14213d;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #818181;
+    background-color: #a0a0a0;
+    height: 98px;
+    width: 98px;
+    margin: 0px 4px;
+}
+
+.tile:hover {
+    background-color: #b6b5b5;
+    border: 1px solid #fff;
+}
+
+.on {
+    background-color: #fca311;
+    border: 1px solid #fff;
+}
+
+.on:hover {
+    background-color: #ffc05b;
+    border: 1px solid #000;
+}
+
+.sidebar {
+    border: 1px solid rgb(160, 159, 159);
+    border-radius: 10px;
+    width: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score, .rules, .restart {
+    height: 175px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#count {
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 25px;
+}
+
+
+.rules p {
+    font-size: 14px;
+    text-align: center;
+    width: 75%
+}
+
+#reset, #playAgain {
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #14213d;
+    color: #fff;
+}
+
+#reset:hover, #playAgain:hover {
+    font-size: 22px;
+    box-shadow: 8px 5px 5px #818181;
+}
+
+
+/* ---------- RESPONSIVE STYLES ---------- */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 500px;
+        width: 550px;
+    }
+
+    .game-container {
+        margin-top: 30px;
+        height: 100%;
+    }
+
+    #game {
+        height: 450px;
+        width: 450px;
+    }
+
+    .tile {
+        height: 75px;
+        width: 75px;
+        margin: 0px 5px;
+    }
+
+    .sidebar {
+        width: 100px;
+        height: 450px;
+    }
+
+    #count {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .rules p {
+        font-size: 12px;
+    }
+
+    #reset, #playAgain {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .game-container {
+        width: 100%;
+        margin: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #game {
+        height: 80%;
+        width: 375px;
+    }
+
+    #start {
+        height: 50px;
+        width: 125px; 
+        font-size: 30px;
+    }
+
+
+    #tiles {
+        width: 90%;
+        height: 90%;
+        padding-top: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tile {
+        height: 50px;
+        width: 50px;
+        
+    }
+
+    .sidebar {
+        flex-direction: row;
+        width: 90%;
+        height: 20%;
+    }
+
+    #count {
+        font-size: 18px;
+    }
+
+    .score p {
+        font-size: 14px;
+    }
+
+    .score, .restart {
+        width: 20%;
+        padding: 2px;
+    }
+
+    .rules {
+        width: 50%;
+        padding: 2px 0px;
+    }
+
+    #reset, #playAgain {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+}
