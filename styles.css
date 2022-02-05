@@ -2,7 +2,6 @@
 body {
     box-sizing: border-box;
     height: 100vh;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +65,7 @@ h1 {
 }
 
 #start:hover {
-    background-color: #fca311;
+    background-color: #219ebc;
     box-shadow: 5px 5px 5px #818181;
     font-size: 45px;
 }
@@ -95,12 +94,12 @@ h1 {
 }
 
 .on {
-    background-color: #fca311;
+    background-color: #bde0fe;
     border: 1px solid #fff;
 }
 
 .on:hover {
-    background-color: #ffc05b;
+    background-color: #bde0fe;
     border: 1px solid #000;
 }
 
@@ -124,9 +123,14 @@ h1 {
     align-items: center;
 }
 
+.score p {
+    margin: 0;
+}
+
 #count {
     font-size: 35px;
-    margin-bottom: 0px;
+    margin: 0;
+    
 }
 
 p {
@@ -149,8 +153,9 @@ p {
 }
 
 #reset:hover, #playAgain:hover {
-    font-size: 22px;
-    box-shadow: 8px 5px 5px #818181;
+    
+    box-shadow: 8px 5px 5px #8181818e;
+    background-color: #219ebc;
 }
 
 
