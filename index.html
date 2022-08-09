@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
     <title>Lights Out</title>
 </head>
 <body>
     <h1>Lights Out</h1>
-    <div class="container">
         
-        <div class="game-container">
+        <main class="game-container">
             <div id="game">
                 
                 <div id="play">
-                    <button id="start">Start!</button>
+                    <button id="start">START</button>
                 </div>
 
                 <div id="win">
@@ -58,18 +59,18 @@
 
             <div class="sidebar">
                 <div class="score">
-                    <p>Moves</p>
-                    <p id="count">0</p>
-                </div>
-                <div class="rules">
-                    <p>Pressing any of the lights will toggle it and the adjacent lights. To win the game, turn off all lights in as few moves as possible.</p>
+                    <p><span id="count">0</span> Moves</p>
                 </div>
                 <div class="restart">
                     <input id="reset" type="button" value="New Game" onClick="location.href=location.href">
                 </div>
+                <div class="rules">
+                    <p>Selecting any of the lights will toggle it and the adjacent lights. To win the game, turn off all lights in as few moves as possible.</p>
+                </div>
+                
             </div>
-        </div>
-    </div>
+        </main>
+    
 
     <script src="index.js"></script>
 </body>

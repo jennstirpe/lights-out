@@ -2,12 +2,13 @@
 /* ---------- START GAME ---------- */
 
 const startBtn = document.querySelector("#start");
+const start = document.querySelector("#play");
 const game = document.querySelector("#tiles");
  
 startBtn.addEventListener("click", startGame);
 
 function startGame() {
-    startBtn.style.display = "none";
+    start.style.display = "none";
     game.style.display = "flex";
     generatePattern();
 }
