@@ -1,5 +1,3 @@
-
-
 $tile-off: #003566 ;
 $tile-on: #ffc300;
 $text: #fff;
@@ -30,6 +28,9 @@ body {
     }
     
 }
+
+
+/*        GAME BOARD STYLES          */
 
 .game-container {
     width: 22rem;
@@ -115,6 +116,10 @@ body {
         }
     }
 
+
+    /*        GAME DETAILS STYLES          */
+
+    
     .sidebar {
         width: 22rem;
         padding: .5rem;
