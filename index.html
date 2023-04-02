@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/styles.css">
     <title>Lights Out</title>
@@ -16,10 +16,10 @@
     <h1>Lights Out</h1>
         
         <main class="game-container">
-            <div id="game">
+            <section id="game">
                 
                 <div id="play">
-                    <button id="start">START</button>
+                    <button id="start">Start</button>
                 </div>
 
                 <div id="win">
@@ -53,22 +53,14 @@
                     <div id="23" class="tile edgeB"></div>
                     <div id="24" class="tile edgeB"></div>
                     <div id="25" class="tile cornerBR"></div>
-                </div>
-                
-            </div>
+                </div> 
+            </section>
 
-            <div class="sidebar">
-                <div class="score">
-                    <p><span id="count">0</span> Moves</p>
-                </div>
-                <div class="restart">
-                    <input id="reset" type="button" value="New Game" onClick="location.href=location.href">
-                </div>
-                <div class="rules">
-                    <p>Selecting any of the lights will toggle it and the adjacent lights. To win the game, turn off all lights in as few moves as possible.</p>
-                </div>
-                
-            </div>
+            <section class="sidebar">
+                <p id="score"><span id="count">0</span> Moves</p>
+                <input id="reset" type="button" value="New Game" onClick="location.href=location.href">
+                <p id="rules">Selecting any of the lights will toggle it and the adjacent lights. To win the game, turn off all lights in as few moves as possible.</p>
+            </section>
         </main>
     
 
