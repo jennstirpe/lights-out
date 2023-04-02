@@ -13,6 +13,10 @@ When the game begins, a random stored pattern of "lights" on the board will ligh
 
 HTML/CSS/JavaScript
 
+### Recent Updates
+Changed styles
+Minor refactoring
+
 ## Contact
 
 Jennifer S. - stirpe.jennifer@gmail.com
